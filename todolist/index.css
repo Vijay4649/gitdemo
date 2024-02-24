@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    }
+main{
+  margin: 5% 10% 0px 10%;
+  padding: 5% 5% 5% 5%;
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+main h1{
+    color: black;
+   padding-bottom: 15px;
+   font-style: italic;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;   
+}
+.search  input,button{
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: antiquewhite;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px;
+}
+.search input{
+    width: 56%;
+}
+.search button{
+    background-color: indianred;
+    color: white;
+}
+ul li{
+    list-style:none ;
+    font-size: 20px;
+    padding: 12px 8px 10px 30px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+ul li:before{
+    content: "";
+    position: absolute;
+    height:26px;
+    width:26px;
+    border-radius: 50%;
+    background-image: url("./image/uncheckd.png");
+    background-size: cover;
+    background-position: center;
+    bottom: 6px;
+    left: 0px;
+}
+
+/* checked task section   */
+ul li.checked{
+color:black;
+text-decoration: line-through;
+}
+ul li.checked::before{
+    
+    background-image: url("./image/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    text-align: center;
+}
+ul li span:hover{
+    background:rgb(231, 224, 224);
+    border-radius: 5px;
+}
